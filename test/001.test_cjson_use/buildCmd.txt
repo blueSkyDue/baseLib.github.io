@@ -1,0 +1,16 @@
+g++ ./main.cpp -I../../openSource/includes -L /home/gaoqiao/work/share/myGithub/baseLib.github.io/openSource/libs64 -lcjson -g -std=c++14 -o cjson_speed_test    ---可以编译通过
+g++ -g -std=c++14 ./main.cpp -I../../openSource/includes -L /home/gaoqiao/work/share/myGithub/baseLib.github.io/openSource/libs64 -lcjson -o cjson_speed_test    ---可以编译通过
+g++ -g -std=c++14 ./main.cpp -o cjson_speed_test -I../../openSource/includes -L /home/gaoqiao/work/share/myGithub/baseLib.github.io/openSource/libs64 -lcjson    ---可以编译通过
+g++ -g -std=c++14 -o cjson_speed_test ./main.cpp -I../../openSource/includes -L /home/gaoqiao/work/share/myGithub/baseLib.github.io/openSource/libs64 -lcjson    ---可以编译通过
+g++ -o cjson_speed_test -g -std=c++14 ./main.cpp -I../../openSource/includes -L /home/gaoqiao/work/share/myGithub/baseLib.github.io/openSource/libs64 -lcjson    ---可以编译通过
+g++ -g -std=c++14 -o cjson_speed_test ./main.cpp -I../../openSource/includes -L /home/gaoqiao/work/share/myGithub/baseLib.github.io/openSource/libs64 -lcjson    ---可以编译通过
+g++ -g -std=c++14 ./main.cpp -o cjson_speed_test -I../../openSource/includes -L /home/gaoqiao/work/share/myGithub/baseLib.github.io/openSource/libs64 -lcjson    ---可以编译通过
+g++ -g -o cjson_speed_test -std=c++14 -I../../openSource/includes ./main.cpp -L /home/gaoqiao/work/share/myGithub/baseLib.github.io/openSource/libs64 -lcjson    ---可以编译通过
+g++ -g -o cjson_speed_test -std=c++14 ./main.cpp -I../../openSource/includes -L /home/gaoqiao/work/share/myGithub/baseLib.github.io/openSource/libs64 -lcjson    ---可以编译通过
+
+编译注意：源文件必须在-L和-l参数之前
+
+
+g++ -g -o cjson_speed_test -std=c++14 -I../../openSource/includes -L /home/gaoqiao/work/share/myGithub/baseLib.github.io/openSource/libs64 -lcjson main.cpp      ---提示链接不到对象
+g++ -I../../openSource/includes -L /home/gaoqiao/work/share/myGithub/baseLib.github.io/openSource/libs64 -lcjson ./main.cpp -g -std=c++14 -o cjson_speed_test    ---提示链接不到对象
+

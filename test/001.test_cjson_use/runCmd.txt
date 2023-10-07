@@ -1,0 +1,1 @@
+export LD_LIBRARY_PATH=LD_LIBRARY_PATH:/home/gaoqiao/work/share/myGithub/baseLib.github.io/openSource/libs64/;./cjson_speed_test
